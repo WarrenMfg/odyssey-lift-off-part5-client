@@ -5,7 +5,6 @@ import Pages from './pages';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
 const isProd = process.env.NODE_ENV === 'production';
-console.log(isProd, process.env.NODE_ENV)
 
 const client = new ApolloClient({
   uri: isProd ? 'https://server-cat-stronauts.herokuapp.com/' : 'http://localhost:4000',
