@@ -3,7 +3,6 @@
  * s, m or H:m (not m:s or H:m:s)
  */
 export const humanReadableTimeFromSeconds = (seconds) => {
-  console.log({seconds})
   if (seconds < 60) {
     return `${seconds}s`;
   }
